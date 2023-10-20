@@ -1,0 +1,345 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+header {
+    background-color: #008080;
+    color: #fff;
+    padding: 15px 0;
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+    position: sticky;
+    top: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.account-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100vh;
+    height: 60vh;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+.account-details {
+    padding: 50px;
+    text-align: left;
+}
+
+.account-details h2 {
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+.account-details p {
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.account-actions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+
+.update-button{
+    padding: 10px 20px;
+    background-color:green;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 18px;
+    text-align: center;
+    transition: background-color 0.3s;
+    margin-bottom: 10px;
+}
+.delete-button {
+    padding: 10px 20px;
+    background-color:crimson;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 18px;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.update-button:hover{
+    background-color:chartreuse;
+    color: darkslategrey;
+}
+.delete-button:hover {
+    background-color:indianred;
+}
+
+.prediction-container {
+    background-color: #007acc;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px 0;
+}
+
+.prediction-button {
+    padding: 15px 30px;
+    background-color: #fff;
+    color: #007acc;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 20px;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.prediction-button:hover {
+    background-color:aqua;
+    color: black;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.patient-account-page {
+    background-image: url('your-background-image.jpg'); /* Replace with your background image path */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+/* Style the account details table */
+.account-details table {
+    width: 300px;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+    margin-top: 20px;
+}
+
+.account-details table td {
+    padding: 8px;
+    border: 1px solid #ddd;
+}
+
+.account-details table td:first-child {
+    font-weight: bold;
+    background-color: #f0f0f0;
+}
+
+.account-details h2 {
+    margin-top: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+/* Hover effect for table rows */
+.account-details table tr:hover {
+    background-color: #f5f5f5;
+}
+/* Style the footer */
+.footer {
+    background-color: #008080;
+    color: #fff;
+    padding: 30px 0;
+    width: 100%;
+    margin-top: auto;
+    margin-bottom: 0%;
+}
+/* Style the footer content */
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-content .footer-logo,
+.footer-content .footer-contact,
+.footer-content .footer-social {
+    flex-basis: calc(33.333% - 20px);
+    text-align: center;
+}
+
+.footer-logo img {
+    width: 80px; 
+    height: 80px; 
+}
+
+.footer-logo h1 {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.footer-contact h2,
+.footer-social h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.footer-contact p,
+.footer-social a {
+    font-size: 16px;
+    margin: 5px 0;
+    color: #333;
+}
+
+/* Style the social media icons */
+.footer-social a {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-social img {
+    width: 30px; 
+    height: 30px; 
+    transition: transform 0.3s ease-in-out;
+}
+
+.footer-social a:hover img {
+    transform: scale(1.2); 
+}
+
+/* Style the footer bottom text */
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    padding: 10px 0;
+}
+
+
+.footer-content a:hover {
+    color: #ff8c00; 
+}
+
+/* Your existing CSS styles... */
+
+/* Improved responsive styles for tablet screens */
+@media (max-width: 768px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    nav {
+        margin-top: 10px;
+    }
+
+    .account-container {
+        flex-direction: column;
+        height: auto;
+        width: 95%;
+        margin: 10px;
+    }
+
+    .account-details {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .account-details h2 {
+        font-size: 28px;
+    }
+
+    .account-details p {
+        font-size: 16px;
+        margin: 10px 0;
+    }
+
+    .account-actions {
+        padding: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .update-button,
+    .delete-button {
+        font-size: 16px;
+        padding: 8px 16px;
+        margin: 0 10px;
+    }
+
+    .prediction-button {
+        font-size: 18px;
+        padding: 12px 24px;
+    }
+}
+
+/* Improved responsive styles for mobile screens */
+@media (max-width: 480px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    nav {
+        text-align: center;
+        margin-top: 10px;
+    }
+    
+    .account-container {
+        flex-direction: column;
+        height: auto;
+        width: 95%;
+    }
+
+    .account-details {
+        padding: 15px;
+        text-align: center;
+    }
+
+    .account-details h2 {
+        font-size: 20px;
+    }
+
+    .account-details p {
+        font-size: 14px;
+        margin: 8px 0;
+    }
+
+    .account-actions {
+        padding: 15px;
+    }
+
+    .update-button,
+    .delete-button {
+        font-size: 14px;
+        padding: 6px 12px;
+        margin: 0 8px;
+    }
+
+    .prediction-button {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+}

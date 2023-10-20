@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/manage.css">
+    <title>Patient Account</title>
+</head>
+<body class="patient-account-page">
+    <header>
+        <h1>Welcome!</h1>
+    </header>
+    <main>
+        <div class="account-container">
+            <div class="account-details">
+                <h2>Your Account Details</h2>
+                <table>
+                    <tr>
+                        <td><strong>Name:</strong></td>
+                        <td><input type="text" id="name" th:field="*{user.name}" readonly></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Age:</strong></td>
+                        <td><input type="text" id="age" th:field="*{user.age}" readonly></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Username:</strong></td>
+                        <td><input type="text" id="username" th:field="*{user.userName}" readonly></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Email:</strong></td>
+                        <td><input type="text" id="email" th:field="*{user.email}" readonly></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Contact:</strong></td>
+                        <td><input type="text" id="contact" th:field="*{user.mobile}" readonly></td>
+                    </tr>
+                </table>
+            </div>
+            
+            <div class="account-actions">
+                <a href="/logout"><button class="delete-button">Log Out</button></a>
+                
+            </div>
+        </div>
+        <div class="prediction-container">
+    <a href="https://lungcancerriskpredictorr-653ead07bdec.herokuapp.com/" class="prediction-button">Lung Cancer Risk Prediction</a>
+        </div>
+
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="assets/img/lung.png" alt="Company Logo">
+                    <h1>Lung Cancer Risk Predictor</h1>
+                </div>
+                <div class="footer-contact">
+                    <h2>Contact Us</h2>
+                    <p>Email: info@example.com</p>
+                    <p>Phone: +1 (123) 456-7890</p>
+                    <p>Address: 123 Main Street, City, Country</p>
+                </div>
+                <div class="footer-social">
+                    <h2>Follow Us</h2>
+                    <a href="#"><img src="assets/img2/fb.png" alt="Facebook"></a>
+                    <a href="#"><img src="assets/img2/twitter.png" alt="Twitter"></a>
+                    <a href="#"><img src="assets/img2/instagram.png" alt="Instagram"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

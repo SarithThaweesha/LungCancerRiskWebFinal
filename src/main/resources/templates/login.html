@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css2/style.css">
+    <title>Login - Lung Cancer Predictor</title>
+</head>
+<body class="login-page">
+    <header>
+        <nav>
+            <ul>
+                <li><a th:href="@{'/'}">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="login-form">
+            <h1>Login to Lung Cancer Predictor</h1>
+            <form action="userLogin" method="POST">
+				<th:block th:if="${param.error}">
+							<h5 class="fw-bold text-danger text-center" id="errorMessage">Incorrect email or password</h6>
+						</th:block>
+						<th:block th:if="${param.logout}">
+							<h5 class="fw-bold text-danger text-center" id="logoutMessage"> 
+								logged out.</h6>
+						</th:block>
+                <div class="input-field">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="username" required>
+                </div>
+                <div class="input-field">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="button-container">
+                    <button type="submit" class="login-button">Login</button>
+                </div>
+            </form>
+            <p>Don't have an account? <a th:href="@{'/register'}">Sign up now</a></p> 
+        </div>
+    </main>
+     <script th:inline="javascript">
+		setTimeout(function () {
+			// Hide the error message (if present)
+			var errorMessage = document.getElementById('errorMessage');
+			if (errorMessage) {
+				errorMessage.style.display = 'none';
+			}
+
+			// Hide the logout message (if present)
+			var logoutMessage = document.getElementById('logoutMessage');
+			if (logoutMessage) {
+				logoutMessage.style.display = 'none';
+			}
+		}, 5000); // 5000 milliseconds = 5 seconds
+		
+		    setTimeout(function () {
+        // Hide the error message (if present)
+        var errorMessage = document.getElementById('successMessage');
+        if (errorMessage) {
+            errorMessage.style.display = 'none';
+        }
+
+        // Hide the logout message (if present)
+        var logoutMessage = document.getElementById('existMessage');
+        if (logoutMessage) {
+            logoutMessage.style.display = 'none';
+        }
+    }, 5000);
+	</script>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="assets/img/lung.png" alt="Company Logo">
+                    <h1>Lung Cancer Risk Predictor</h1>
+                </div>
+                <div class="footer-contact">
+                    <h2>Contact Us</h2>
+                    <p>Email: info@example.com</p>
+                    <p>Phone: +1 (123) 456-7890</p>
+                    <p>Address: 123 Main Street, City, Country</p>
+                </div>
+                <div class="footer-social">
+                    <h2>Follow Us</h2>
+                    <a href="#"><img src="assets/img2/fb.png" alt="Facebook"></a>
+                    <a href="#"><img src="assets/img2/twitter.png" alt="Twitter"></a>
+                    <a href="#"><img src="assets/img2/instagram.png" alt="Instagram"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

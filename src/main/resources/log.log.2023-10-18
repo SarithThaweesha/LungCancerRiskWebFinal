@@ -1,0 +1,5 @@
+[2023-10-18 10:24:25,853] http-nio-8080-exec-5 com.example.demo.controller.adminController 86 INFO   - Deleted user with ID: 4
+[2023-10-18 10:24:46,677] http-nio-8080-exec-5 com.example.demo.controller.adminController 86 INFO   - Deleted user with ID: 5
+[2023-10-18 10:25:14,708] http-nio-8080-exec-5 com.example.demo.controller.adminController 41 INFO   - Saved a new customer with email: perera@gamil.com
+[2023-10-18 10:25:35,116] http-nio-8080-exec-5 com.example.demo.controller.adminController 86 INFO   - Deleted user with ID: 6
+[2023-10-18 10:26:15,478] http-nio-8080-exec-5 com.example.demo.controller.adminController 41 INFO   - Saved a new customer with email: perera@gamil.com

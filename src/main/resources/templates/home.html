@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="assets/css2/style.css"> <!-- Link to your CSS file -->
+</head>
+<body class="home-page">
+    <header>
+        <nav>
+            <ul>
+                <li><a th:href="@{'/'}">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    
+    <main>
+        <div class="center">
+            <h1>Get started</h1>
+            <p>Welcome to our Lung Cancer Prediction System</p>
+            <div class="buttons">
+                <a th:href="@{'/login'}" class="button">Login</a> <!-- Link to login page -->
+                <a th:href="@{'/register'}" class="button">Register</a> <!-- Link to registration page -->
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="assets/img/lung.png" alt="Company Logo">
+                    <h1>Lung Cancer Risk Predictor</h1>
+                </div>
+                <div class="footer-contact">
+                    <h2>Contact Us</h2>
+                    <p>Email: info@example.com</p>
+                    <p>Phone: +1 (123) 456-7890</p>
+                    <p>Address: 123 Main Street, City, Country</p>
+                </div>
+                <div class="footer-social">
+                    <h2>Follow Us</h2>
+                    <a href="#"><img src="assets/img2/fb.png" alt="Facebook"></a>
+                    <a href="#"><img src="assets/img2/twitter.png" alt="Twitter"></a>
+                    <a href="#"><img src="assets/img2/instagram.png" alt="Instagram"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
