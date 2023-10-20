@@ -27,10 +27,10 @@ public class defaultAdminCredentials {
 	        User defaultUser = new User();
 	        defaultUser.setId(1);
 	        defaultUser.setName("Admin");
-	        defaultUser.setAge("-");
-	        defaultUser.setUserName("-");
+	        defaultUser.setAge("30");
+	        defaultUser.setUserName("admin01");
 	        defaultUser.setEmail("admin@gmail.com");
-	        defaultUser.setPassword(passwordEncoder.encode("password"));
+	        defaultUser.setPassword(passwordEncoder.encode("123admin"));
 	        defaultUser.setMobile("-");
 	        defaultUser.setRole("ROLE_ADMIN");
 	        userRepository.save(defaultUser);
